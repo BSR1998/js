@@ -122,3 +122,41 @@ console.log(myDate)
 const myTimeMs = Date.now()
 
 console.log(myTimeMs)
+
+const mySpecificDate = new Date("2013-11-06")
+
+console.log(mySpecificDate)
+
+
+// Global scope variables 
+
+var a = 1;
+let b =2;
+const c = 3;
+
+if(true) {
+ // local scop
+    let b = 22
+    const c = 33;
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}
+
+// Math library
+console.log(Math.max(1,2,3,4,5,6))
+console.log(Math.min(1,2,3,4,5,6))
+
+console.log(Math.floor(Math.random() * (20-10 + 1) + 10))
+
+console.log(Math.abs(-10))
+
+console.log(Math.ceil(12.1))
+
+console.log(Math.round(13.4))
+
+
+let numToStr = "10"
+
+console.log(Number(numToStr))
+
