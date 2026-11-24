@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1 class="hello">Hello</h1>
+    <p id="par">Paragraph</p>
+    <ul class="ulhello">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        const firstLi = document.querySelector(".ulhello li:first-child")
+       
+        firstLi.remove()
+
+        const newFirstLi = document.createElement("li")
+        newFirstLi.style.color = "red"
+        newFirstLi.appendChild(document.createTextNode("New First"))
+        const ul = document.querySelector(".ulhello")
+        console.log(ul.chi)
+        ul.insertBefore(newFirstLi, ul.children[1]);
+
+    </script>
+</body>
+</html>
